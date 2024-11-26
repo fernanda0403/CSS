@@ -1,0 +1,67 @@
+/*
+cascada y especificidad
+
+se refieren a como el navegador decide aplicar los estilos.
+
+Cascada -> Orden de las reglas en CSS
+Especificidad -> Valor de las relas en CSS
+
+¿Qué es una regla?
+
+la combinacion de sintaxis de un selector, sus propiedades y valores
+
+selector {
+propieda: valor;
+}
+
+*cascada
+
+si un selector se repite a lo largo del codigo se aplicara la ulima regla escrita
+
+* Especificidad
+
+El orden de impacto de los selecores. Del menos impotante al más importante::after
+
+5. Selector de elemento
+4. Selector de clase
+3. Selector de id
+2. Estilos de línea
+1. !important
+
+si las reglas tienen la misma especificidad, Se aplicara la ultimaa que aparece en el documento, (Cascada)
+
+*/
+
+
+/*Cascada*/
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue
+}
+
+/* Especificidad */
+
+
+h1 {
+    color: green;
+}
+
+.title {
+    color: orangered;
+}
+
+#title {
+    color: darkblue;
+}
+
+#title {
+    color: chocolate;
+}
+
+h1 {
+    color: blueviolet !important;
+}

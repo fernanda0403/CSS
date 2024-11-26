@@ -29,17 +29,61 @@ tipos de selectores
         }
 
     -hijo directo
+        Selecciona elementos que son hijos directos de un elemento padre.
+
+        elemento > elementosHijos {
+        Propiedades valor;
+        }
+
     -elemento adjacente
+
+        Selecciona el primer elemento inmediatamente despues del otro. (Su hermano inmediato o en ingles sibling)
+
+        elemento + elementoAdjacente {
+        propiedad: valor
+        }
+
     -hermano general
+
+        slecciona todos los elementos hermanos después de un elemento.
+
+        elemento ~ elementoHermano {
+         propiedad: valor
+        }
+
 
 5. Selectores de atributos
     -Atributo
-    -Atributo-Valor
+        selecciona elementos segun el atribto que indiquemos sin importar su valor
+
+        elmento [atributo] {
+        propiedad: valor;
+        }
+
+    -Atributo con Valor
+        selecciona elementos según el atributo y el valor que índiquemos.
+
+            elmento [atributo=valor] {
+            propiedad: valor;
+        }
  
 6. Selectores avanzados
 
     - Pseudo-clases
+        seleccionmos elementos en un estado en particular
+
+            elemento:pseudoclase {
+            Propiedd: valor;
+            }
+
+
     - Pseudo-elementos
+    seleccionamn partes especifoicas de un elemento en html
+
+    elemento::pseudoelementos {
+    propiedad: valor;
+    }
+
 
 */
 
@@ -110,4 +154,75 @@ aside section {
     text-align: right;
     padding: 24px;
     background-color: rgb(211, 139, 44);
+}
+
+/* combindos - Hijos directos */
+
+ul > li {
+    background-color: lightblue;
+}
+
+.lista > li {
+    font-size: 8px;
+    color: darkblue;
+}
+
+/* combindos - elemento Adjacente */
+
+h3 + ul {
+    list-style: none;
+}
+
+
+.bro + li {
+    background-color: brown;
+}    
+
+/* combindos - Hermano general */
+
+.bro + li ~ li{
+    background-color: rgb(224, 18, 197);
+}
+
+.tercero ~ li {
+    color: black;
+    font-size: 40px;
+}
+
+
+
+/* selector de atributo */
+a[href] {
+    display: block;
+    text-decoration: none;
+    color: magenta;
+}
+
+/* selector de atributo con valor */
+
+a[ href="https://www.Instagram,com"] {
+    font-size: 48px;
+    color: orangered;
+}
+
+/* pseudo-clase */
+
+a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+}
+
+a:focus {
+    border: 3px solid red;
+}
+
+/* pseudo-elementos */
+
+a::after {
+    content: "🔥";
+}
+
+a::before {
+    content: "Este es un enlace hacia: ";
 }
