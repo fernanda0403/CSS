@@ -1,0 +1,71 @@
+/*
+Fuentes
+
+Las fuentes son aspecto clave en el diseño web, influyen en la estética,legibilidad y jerarquía visual.
+En CSS propieda que define en tipo de fuente enlas reglas en:
+
+font-family: Nombre Fuente";
+
+Fuentes web safe o seguras son tipografías predeterminadas y que se pueden usar en  cualquier sistema operativo y/o navegador web
+
+Por estilo o categoría
+    -serif
+    -sans-serif
+    -monospace
+    -cursive
+    -decorative
+
+Por nombre de la familia tipografíca
+    -Arial
+    -Times New Roman
+    -Verdana
+    -Geneva
+    -...
+
+*los valores que tienen más de una palabra se escriben entre comillas "" o ''
+*/
+
+ /* *Se recomienda usar fuentes de respaldo, si por alguna razon no se carga la fuente principal, se cargaran las fuentes secundarias.
+ 
+ Arial, verdana, sans-serif
+'Times New Roman', Times, serif;
+
+
+Fuentes Personlizadas
+    +Fuentes Esernas
+    Son recursos que traemos de sevidores remotos.
+
+    -Google fonts
+    -Adobe Fonts
+    -Font Squirlt
+    -...
+
+    +Fuentes Internas
+    son los recursos que tenemos en nuestro propio sevidor o sistema de carpetas.
+
+    -Descargamos
+    -Guardanos en una carpeta especifica de nuetro sitio web.
+
+ */
+html {
+
+    /* Por estilo o categoría */
+    font-family: serif; /* defaut */
+    font-family: sans-serif; /* sin patines, palo seco, geometrica */
+    font-family: monospace; /* Mono-espaciadas */
+    font-family: cursive; /* script o escritura a mano  */
+    font-family: fantasy; /* Decoraivas con "glifos" no convencionales */
+
+    /* Por nombre de la familia tipografíca */
+    font-family: Arial;
+    font-family: "times new roman";
+    font-family: verdana;
+    font-family: 'gill sans';
+    font-family: "courier new";
+
+   /* Fuentes de respaldo */
+   font-family: Arial, Helvetica, sans-serif;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: 
+}
