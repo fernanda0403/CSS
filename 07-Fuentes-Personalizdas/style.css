@@ -1,0 +1,106 @@
+/*
+
+    Fuentes personalizadas
+        -Fuentes esternas
+         llamamos desde servidores remotos
+
+        Gogle fonts
+         Es un servicio o catalogo de fuentes que podemos usar de manera gratuita en internet.
+         
+         -optimizadas para digital
+         -gratuias de uso comercial
+         -curadas y de ala calidad
+         - codigo de vinculacion para web
+
+         https://fonts.google.com/
+
+         1. seleccionar la fuente y traer el códgo de incrustación en embed code al html y pegarlo dentro de las etiqetas <head>
+
+         2. Definimos las reglas css pra los elementos que se las queremos aplica, usamos las propiedades de font.family, font-style, para las típografias estáticas.
+
+        -Fuentes Internas
+         llamamos desde nuestro servidor o carpeta de recursos.
+
+         1. Primero debemos tener los archivos en una carpeta especifica
+
+         2. Formatos comunes son: .ttf, .otf, .woff, .woff2, etc...
+
+         3. Declaramos en CSS @font-face
+
+         @font-face {
+            font-family; nombreFuente; // Dos palabras entre ""
+            src: url(ubicacion) format(Formato); Ubicacion y fromato entre ""
+        }
+
+        4.Cremos la regla CSS
+
+        selector {
+         font-family; ombreFuente, respaldo;
+        }
+
+*/
+
+/* Tipografías estáticas */
+
+
+h1 {
+    font-family: "IBM Plex Mono";
+    font-weight: 700; /* elige el grosor o peso de la tipografía */
+    font-style: italic; /* elige si es italica o cursiva */
+}
+
+p {
+    font-family: "IMB Plex Mono";
+    font-weight: 400;
+}
+    
+    /* Tipogrfías varibles */
+
+/* .titlo {
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: 876;
+font-style: normal;
+transition: font-weight 1s ease;
+}
+
+.titlo:hover {
+    font-weight: 182;
+    transition: font-weight 1s ease;
+}
+
+.texto{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+
+#titulo{
+
+}
+
+#parrafo{
+    
+}
+
+/* fuentes Internas */
+
+@font-face {
+    font-family: "clouts";
+    src: url("./fonts/clouts.ttf"), format("ttf")
+}
+
+@font-face {
+    font-family: "lastchristmas";
+    src: url("./fonts/lastchristmas.otf"), format("otf")
+}
+
+#titulo {
+    font-family: "lastchristmas";
+}
+
+#parrafo {
+    font-family: "clouts";
+}
