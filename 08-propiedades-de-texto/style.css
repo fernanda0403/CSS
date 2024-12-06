@@ -1,0 +1,54 @@
+body {
+    background-color: darkblue;
+}
+
+/* 
+Propiedade de texto estan relacionadas con el estilo o formato d elos textos. 
+Permiten controlar su a parienci, alineación, espaciado y decoación
+
+Principales
+
+Color: --> Define el color del texto. recibe diferentes tipos de valores: keywords, hexadecimal, rgb o rgba, hsl, transparent.
+
+Font-family: --> Define la familia tipografica del texto. Recibe los nombres de las familias, si ond edos palabras se escribe entre comillas. acept mas de dos vaores separados por comas como fuentes de respaldo
+
+Font-size --> Define el tamaño del texto acepta valore en px. em y rem, porcentaje,terminos predefinidos
+
+Font-style --> El estilo la fuente recibe parametros normal, italic y oblique
+
+text-aling: Define la alineacion del texto. Recibe los valores left, rigth, center, justify, start, end.
+
+text-decortion --> Añade una lnea transversal al texto. FEcibe los valores: none,underline, overline, solid.
+*/
+
+h1 {
+    color: palevioletred; /* Keywords */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 52px;
+    font-size: 100%; /* 16px=100% */
+    font-size: larger;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: ;
+}
+
+p {
+    color: rgb(102, 21, 102);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24;
+    font-size: 100%;
+    font-size: medium;
+    font-style: italic;
+    text-align: right;
+}
+
+.impotant {
+    text-decoration: underline;
+}
+
+a {
+    color: yellow;
+    font-size: larger;
+    text-decoration: none;
+}
