@@ -1,0 +1,58 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Se hereda */
+    color: whitesmoke; /* Se hereda */
+    background-color: darkslateblue; /* No se hereda */
+
+    height: 1000px; /* absoluta */
+    height: 100%;
+}
+
+/*
+ancho y alto
+
+    Los elementos de bloque tiden todo el ancho dsiponible de su contenedor
+    los elementos de bloque miden el alto de su contenido
+    los elementos d e linea miden el ancho de su contenido
+    los elementos d elinea miden el alto de su contendo conciderando un espacio entre lineas
+
+
+    width (alto) y heigth (ancho)
+
+    Se usan para estblecer dimenciones de un elemento en  una página web.
+    estás propiedades permiten definir el tamaño de los elementos, como cajas, imgnes o contenidos de una anera explícita
+
+    width estalece el ancho de un elemento y podemos espeificar su dimencion horizontal con unidades como px, %, em y rem, auto
+
+    heigth establece la altua de un elemento y podemos especificar su dimencion vertical con unidades como px, %, em y rem, auto
+
+    * Si no se espcifica la altura a un elemento de bloque, el elemento ajustara su altura al contenido.
+
+    * Si usamos valores con unidade absolutas, limitamos la adaptibilidad de llos elementos. Es recomendable usar unidade relativas como % o vw (viewport width) / vh (viewport height)
+
+    Para los elementos de linea el width y el heigth no funcionan. Por default se ajustarán a su contenido
+
+    si queremos que un elemento de línea responda a un anco y un alto esplixito, necesitamos cambiar su comportamiento a traveéz de la propiedad de display
+
+    Para esto la propiedad display puede recibir los valores de inline-block o block.
+*/
+
+.bloque {
+    width: 100px; /* u. absoluta */
+    width: 50%; /* u. relativa */
+    width: auto; /* Default */
+
+    height: 100px;  /* u. absoluta */
+    height: auto;  /* u. default */
+    height: 50%;  /* u. relativa */
+
+    background-color: lightcoral;
+}
+
+.linea {
+    display: block; /* cambia su visualización */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+    background-color: lightseagreen;
+}
