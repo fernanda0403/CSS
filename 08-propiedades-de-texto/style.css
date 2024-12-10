@@ -18,19 +18,37 @@ Font-style --> El estilo la fuente recibe parametros normal, italic y oblique
 
 text-aling: Define la alineacion del texto. Recibe los valores left, rigth, center, justify, start, end.
 
-text-decortion --> Añade una lnea transversal al texto. FEcibe los valores: none,underline, overline, solid.
+text-decortion --> Añade una lnea transversal al texto. Recibe los valores: none,underline, overline, line-through.
+
+text-transform -> Controla la capacitacion del texto. Recibe los valore: uppercase, lowercse, capitlize
+
+line height --> espacio entre las lineas de texto. Recibe valore en px, %, em y rem, un valor sin unidad sera relativo al tamaño de la fuente.
+
+letter-spacing --> espacio entre letra. Recibe valores: px, rem y em.
+
+word-spacing --> espacio entre palabras. Recibe valores: px, rem y em. 
+
+text-shadow --> Sombra del texto. Recibe los valores en el siguiente orden: offset-x, offset-y, blur y color
+
+10px 10px 10px 10px red -> Derecha y abajo
+
+-10px -10px -10px -10px blue --> Izquierda y arriba
 */
 
 h1 {
     color: palevioletred; /* Keywords */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 52px;
     font-size: 100%; /* 16px=100% */
     font-size: larger;
+    font-size: 40px;
     font-style: oblique;
     text-align: center;
     text-decoration: line-through;
-    text-decoration: ;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.664);
+
 }
 
 p {
@@ -41,14 +59,20 @@ p {
     font-size: medium;
     font-style: italic;
     text-align: right;
+    text-transform: capitalize;
+    line-height: 50px;
+    word-spacing: 7px;
 }
 
 .impotant {
     text-decoration: underline;
+    text-transform: uppercase;
+    font-size: large;
 }
 
 a {
     color: yellow;
     font-size: larger;
     text-decoration: none;
+    text-transform: lowercase;
 }
