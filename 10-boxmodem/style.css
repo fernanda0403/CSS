@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: darkslateblue;
+}
+
+/* 
+Box model
+
+Es un concepto fundamental que describe los elementos de una pagina web que organizan y calculan su tamaño.
+
+    1. Contenido
+        Es el area donde se encuentra el texto las imagenes u otro elemento hijo el tamaño de esta area se define con las propiedades de whidth y heigth.
+
+    2. Relleno (Pading)
+        Es el espacio entre el contenido y el borde de la caja ayuda a crear del contenido.
+
+        La propiedad de padding es un "shorthand" que controla los 4 lados posibles de la caja.
+          padding: Top rigth buttom left;
+          padding: Top left/rigth buttom;
+          padding: Top/bottom rigth/left;
+          padding: t/r/b/l;
+
+          padding-top: valor;
+          padding-rigth: valor;
+          padding-buttom: valor;
+          padding-left: valor;
+    
+    3. Borde (border)
+        Es el borde que rodea el contenido y el contenido podemos personalizar su grosor, estilo y color tambiene es una propiedad de shorthand.
+
+        border, ancho, estilo color;
+        
+        border-width: Valor;
+        border-color: Valor;
+        border-style: Valor;
+
+        border-top-color: Valor;
+        border-rigth-color: Valor;
+        border-style: Valor;
+
+        Valores de estilo de borde:
+
+            -none
+            -hidden
+            -solid
+            -dotted
+            -dashed
+            -double
+            -groove
+            -ridge
+            -inset
+            -ouset
+
+    4. Mergen
+        Permite tener espacio entre el borde de un elemento y otros elementos de la pagina. Tambien es un shorthead
+
+            margin: top rigth bottom left;
+            margin: top rigth/left bottom;
+            margin: top bottom/left rigth;
+*/
+/* content */
+
+h2 {
+    padding: 24px;
+    border: 5px solid black;
+
+    margin: 2px 16px 24px 32px;
+
+    width: 200px;
+    height: 80px;
+    background-color: lightcoral;
+}
+
+img {
+    padding: 24px 48px; 
+
+    border-width: 10px;
+    border-style: inset;
+    border-color: aquamarine;
+
+    line-height: none;
+    margin: 12px 24px 48px;
+
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+ul {
+    padding: 24px 48px 64px;
+
+    border-top-style: dashed;
+    border-top-color: blue;
+    border-top-width: 20px;
+
+    border-left-style: groove;
+    border-left-color: yellow;
+    border-left-width: 10px;
+
+    margin: 48px 8px;
+
+    width: 400px;
+    height: auto;
+    list-style: none;
+    background-color: lightgreen;
+}
+
+li {
+    border-bottom-style: dotted;
+    border-bottom-color: purple;
+    border-bottom-width: 10px;
+
+    padding: 8px 16px 24px 32px;
+
+    margin: 12px;
+
+    width: 200px;
+    height: 100px;
+    background-color: lightsalmon;
+}
