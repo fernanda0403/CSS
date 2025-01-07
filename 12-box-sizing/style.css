@@ -1,0 +1,57 @@
+/* 
+
+Es la propiedad que calcula las dimensiones de un elemento incluyendo el padding y el border. los dos valores que pueden tener son:
+
+box-sizing: content-box; //valor por defecto
+
+    si tenemos un elemento con width 100px, un padding 10px y un border de 5px, el anchi total del elemento será de 130px.
+
+    100px + 10px +10px + 5px + 5px = 130px
+    ancho + paddingl/r + border l/r = total de ancho
+
+    esto es porque el padding y el borde se suman al width del elemento.
+    
+    box-sinzing: border-box; // incluye el padding y el border
+
+    si tenenos un elemento con width 100px, un paddig y el border se incluyen 
+
+nota: como buena practica se suele definir a todos los elementos de tml la propiedad border box desde el principio a modo de un reset basico
+*/
+
+/* reset de estilos */
+
+/* * {
+box-sizing: border-box
+} 
+
+esto se hace a travez del selector universal "*"
+*/
+
+/* estilos base */
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: gray;
+    color: rgb(90, 3, 90);
+}
+
+.content-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid salmon;
+    background-color: sandybrown;
+    box-sizing: content-box; /* default */
+}
+
+.border-box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid orchid;
+    background-color: orangered;
+    box-sizing: border-box; 
+}
