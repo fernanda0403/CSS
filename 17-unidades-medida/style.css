@@ -1,0 +1,50 @@
+/* 
+
+unidades de medida en css
+
+las unidades de medida en css se dividen en dos categorias principales.
+
+1. unidades absolutas (valores fijos)
+
+son medidas que se mantienen sus valores fijos independientemente del dispositivo o contexto. Es decir siempre tendran el mismo valor sin importar el tamaño de pantalla o el elemento contenedor.
+
+son utiles cuando se requiere presición en las medidas, el problema de esto es que no son ideales para diseño web responsivo.
+
+las unidad más usada:
+- px (pixeles): Esta unidad marca un punto en la pantalla. 1/96 de 1in
+
+Otras unidades:
+
+- cm (centimetros) 1cm = 96px | 2.54in 
+- mm (milimetros)  1/10 de 1cm
+- in (pulgadas)    1in = 96px
+- pc (picas)       1/6 de 1in
+- pt (puntos)      1/72 de 1in
+
+2.unidades relativas (valores variables)
+
+son medidas que adaptan sus valores en función del dispositivo o contexto. Es decir que siempre ajustaran su valor de acuerdo al tamño de pantalla al contenedor u otro valor de referencia.
+
+son útiles cuando se nececita flecibilidad y son ideales para el diseño web responsivo.
+
+las unidades más usadas
+- em: relativa al tamaño de fuente del elemento padre en html.
+- rem: relativa al tamaño de fuente del elemento root <html>
+- %: porcentaje es relativo al elemento padre.
+- vw: viewport widh (ancho de la ventana) porcentaje relativo al ancho de la ventana
+- vh: viewport hegiht (alto de la ventana) porcentaje relativo a la altura de la ventana
+- vmin: viewport min. porcentaje relativo al lado mas pequeño de la ventana.
+- vmax: viewport max. porcentaje relativo al lado mas grande de la ventana.
+
+otras unidades:
+- ex: es relativa a la altura de las "x" minuscúlas.
+- ch: ee relativa al ancho del carácter "0".
+- lh: es relativo a la altura de la linea del elemento html. leading o interlineado, En CSS Line Height
+
+*/
+
+
+body {
+    color: beige;
+    background-color: black;
+}
